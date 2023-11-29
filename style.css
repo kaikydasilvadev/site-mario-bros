@@ -76,7 +76,6 @@ nav a:hover::after{
 #home{
     background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
     color: #fff;
-    height: 800px;
     min-height: 100vh;
 }
 .background{
@@ -88,13 +87,16 @@ nav a:hover::after{
 
 }
 .home-div{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.home-div .super{
-    width: 300px;
     
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.super{
+    
+    width: 500px;
     margin-top: 8rem;
 }
 .home-div p{
@@ -144,15 +146,23 @@ nav a:hover::after{
     letter-spacing: 2px;
 }
 .character-center{
-    display: inline-block;
-    margin-left: 8rem;
-   margin-right: 8rem;
-   margin-top: 5rem;
-    
+    display: flex;
+   margin: auto;
+   justify-content: center;
+   padding-top: 5rem;
+   padding-bottom: 5rem;
 }
 .character-center img{
-    margin-left: 40px;
+    padding-left: 24px;
+    padding: 24px;
+    width: 350px;
+    cursor: pointer;
 }
+.character-center img:hover{
+    filter: brightness(30%);
+}
+
+
 #sinopse{
     background-color: var(--cor3);
     color:#fff;
@@ -183,6 +193,7 @@ nav a:hover::after{
 }
 .ticket{
     margin-top: 5rem;
+    padding-bottom: 5rem;
 
 }
 .ticket a{
@@ -203,33 +214,100 @@ nav a:hover::after{
 }
 #trailer{
     background-image: url(./img/logos-trailer.png), linear-gradient(to right,#ff3c00,#e0c111);
-    
     color: #fff;
-    text-align: center;
-   
-
+    
 }
-#trailer,p{
-    padding-top: 3rem;
-}
-
-.movie-mario{
+.trailer-mario{
     display: block;
     width: 1078px;
     height: 618px;
-    
     padding-top: 5rem;
+    padding-bottom: 3rem;
     margin: auto;
 }
+
 @media screen and (max-width: 768px){
-    .super{
+    header img{
+        width: 30px;
+        margin: 0;
+    }
+    nav{
         display: none;
+    }
+    .super{
+        width: 300px;
+        margin-top: 5rem;
+        
+        
     }
     .sinopse img{
         display: none;
     }
-    .home-texto{
-        font-size: 10px;
-        width: 50px;
+    
+    
+    #sinopse h1{
+        padding-right:0 ;
+        padding-left: 2rem;
+        text-align:left;
+        padding-bottom: 1rem;
+        
     }
+    .sinopse p{
+        padding-top: 0;
+        margin: 0;
+        font-size: 16px;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+    .coteiner-character{
+        display: flex;
+    }
+    .character-center{
+        display: flex;
+        flex-direction:row;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .character-center img{
+        width: 150px;
+        height: 150px;
+        padding: 0px;
+       
+        
+
+    }
+    .character-center img :hover{
+        filter: brightness(30%);
+    }
+
+    .ticket{
+        padding-bottom: 5rem;
+    }
+    iframe{
+        width: 300px;
+        height: 150px;
+        margin-bottom: 3rem;
+    }
+    #home-texto{
+        font-size: 10px;
+        width: 300px;
+        margin: 0%;
+
+    }
+    #home-title{
+        margin-left: 0%;
+        display: flex;
+    
+    }
+    .trailer-mario{
+        display: block;
+        width: 300px;
+        height: 300px;
+        padding-top: 5rem;
+        padding-bottom: 3rem;
+        margin: auto;
+    }
+    
+    
+
 }

@@ -37,8 +37,8 @@
                         <img class="super" src="./img/super mario.png" alt="">
                     
                         <div >
-                           <!--<h1 class="home-title">SUPER MARIO BROS. O FILME</h1>-->
-                            <!--<p class="home-texto">Venha assistir ao emocionante filme de Mario e seu irmão Luigi, onde aventuras incríveis, repletas de desafios épicos e emocionantes acontecem.</p>-->
+                           <h1 id="home-title">SUPER MARIO BROS. O FILME</h1>
+                            <p id="home-texto">Venha assistir ao emocionante filme de Mario e seu irmão Luigi, onde aventuras incríveis, repletas de desafios épicos e emocionantes acontecem.</p>
                         </div>
                     </div>
                 </div>
@@ -50,13 +50,15 @@
         </section>
         <SEction id="personagens">
             <h1>PERSONAGENS</h1>
-            <div class="character-center">
-               <!-- <img src="./img per/mario.png" alt="">
-                <img src="./img per/luigi.png" alt="">
-                <img src="./img per/dkong.png" alt="">
-                <img src="./img per/princess peach.png" alt="">
-                <img src="./img per/bwoser.png" alt="">
-                <img src="./img per/toad.png" alt=""> -->
+            <div id="coteiner-character">
+                <div class="character-center">
+                   <img onclick="mario()" src="./img per/mario.png" alt="">
+                    <img onclick="luigi()" src="./img per/luigi.png" alt="">
+                    <img onclick="dkong()" src="./img per/dkong.png" alt="">
+                    <img onclick="peach()" src="./img per/princess peach.png" alt="">
+                    <img onclick="bwoser()" src="./img per/bwoser.png" alt="">
+                    <img onclick="toad()" src="./img per/toad.png" alt="">
+                </div>
             </div>
         </SEction>
         <section id="sinopse">
@@ -88,8 +90,102 @@
         </section>
         <section id="trailer">
             <h1>TRAILER</h1>
-            
+            <iframe class="trailer-mario" width="560" height="315" src="https://www.youtube.com/embed/cDNkh5WybZo?si=lbQ-O48HfuY0d-8q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </section>
     </main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        function mario(){
+            Swal.fire({
+            title: " Princesa Peach",
+            textwidth: "500",
+            confirmButtonColor: "#d33",
+            confirmButtonText: "Yes, delete it!",
+            background: "	#d29bfd",
+            html:"<p >Em Mario Bros: O Filme , a Princesa Peach assume um papel central com graciosidade e liderança. Seu vestido rosa icônico é a representação visual de sua nobreza. Além de ser a figura tradicionalmente resgatada, Peach revela uma força interior, desempenhando um papel ativo na defesa do Reino do Cogumelo. Seus laços emocionais e alianças estratégicas são explorados, proporcionando à personagem uma dimensão mais profunda. No universo cinematográfico, Peach se destaca como uma governante corajosa e multifacetada.</p>",
+            popup: `
+            
+            animate__animated
+            animate__fadeOutDown
+            animate__faster`
+                           });
+        }
+        function luigi(){
+            Swal.fire({
+            title: " Princesa Peach",
+            textwidth: "500",
+            confirmButtonColor: "#d33",
+            confirmButtonText: "Yes, delete it!",
+            background: "	#d29bfd",
+            html:"<p >Em Mario Bros: O Filme , a Princesa Peach assume um papel central com graciosidade e liderança. Seu vestido rosa icônico é a representação visual de sua nobreza. Além de ser a figura tradicionalmente resgatada, Peach revela uma força interior, desempenhando um papel ativo na defesa do Reino do Cogumelo. Seus laços emocionais e alianças estratégicas são explorados, proporcionando à personagem uma dimensão mais profunda. No universo cinematográfico, Peach se destaca como uma governante corajosa e multifacetada.</p>",
+            popup: `
+            
+            animate__animated
+            animate__fadeOutDown
+            animate__faster`
+                           });
+        }
+        function dkong(){
+            Swal.fire({
+            title: " Princesa Peach",
+            textwidth: "500",
+            confirmButtonColor: "#d33",
+            confirmButtonText: "Yes, delete it!",
+            background: "	#d29bfd",
+            html:"<p >Em Mario Bros: O Filme , a Princesa Peach assume um papel central com graciosidade e liderança. Seu vestido rosa icônico é a representação visual de sua nobreza. Além de ser a figura tradicionalmente resgatada, Peach revela uma força interior, desempenhando um papel ativo na defesa do Reino do Cogumelo. Seus laços emocionais e alianças estratégicas são explorados, proporcionando à personagem uma dimensão mais profunda. No universo cinematográfico, Peach se destaca como uma governante corajosa e multifacetada.</p>",
+            popup: `
+            
+            animate__animated
+            animate__fadeOutDown
+            animate__faster`
+                           });
+        }
+        function peach(){
+            Swal.fire({
+            confirmButtonColor: "#d33",
+            confirmButtonText: "Yes, delete it!",
+            background: "	#d29bfd",
+            html:"<h2> Princesa Peach </h2> <p >Em Mario Bros: O Filme, a Princesa Peach brilha com graciosidade e liderança, transcendendo a tradicional figura de donzela em perigo. Seu vestido rosa é um símbolo visual de sua nobreza, enquanto sua força interior a destaca como uma governante corajosa e multifacetada no Reino do Cogumelo.</p>",
+            top: "0px",
+            popup: `
+            
+            animate__animated
+            animate__fadeOutDown
+            animate__faster`
+                           });
+        }
+        function bwoser(){
+            Swal.fire({
+            title: " Princesa Peach",
+            textwidth: "500",
+            confirmButtonColor: "#d33",
+            confirmButtonText: "Yes, delete it!",
+            background: "	#d29bfd",
+            html:"<p >Em Mario Bros: O Filme, Bowser assume uma presença imponente, redefinindo seu papel como o Rei dos Koopas. Com um design visual magnífico, seu casco espinhoso e chifres afiados mantêm sua essência icônica. O enredo revela motivações complexas que vão além da busca pela Princesa Peach, proporcionando profundidade emocional ao personagem. Ao estabelecer relacionamentos inesperados, Bowser surpreende, desafiando as expectativas do público. Nesse filme, Bowser transcende a imagem tradicional de vilão, emergindo como uma figura cativante e multifacetada no universo cinematográfico de Mario Bros.</p>",
+            popup: `
+            
+            animate__animated
+            animate__fadeOutDown
+            animate__faster`
+                           });
+        }
+        function toad(){
+            Swal.fire({
+            title: " Princesa Peach",
+            textwidth: "500",
+            confirmButtonColor: "#d33",
+            confirmButtonText: "Yes, delete it!",
+            background: "	#d29bfd",
+            html:"<p >Em Mario Bros: O Filme , a Princesa Peach assume um papel central com graciosidade e liderança. Seu vestido rosa icônico é a representação visual de sua nobreza. Além de ser a figura tradicionalmente resgatada, Peach revela uma força interior, desempenhando um papel ativo na defesa do Reino do Cogumelo. Seus laços emocionais e alianças estratégicas são explorados, proporcionando à personagem uma dimensão mais profunda. No universo cinematográfico, Peach se destaca como uma governante corajosa e multifacetada.</p>",
+            popup: `
+            
+            animate__animated
+            animate__fadeOutDown
+            animate__faster`
+                           });
+        }
+    </script>
 </body>
 </html>
